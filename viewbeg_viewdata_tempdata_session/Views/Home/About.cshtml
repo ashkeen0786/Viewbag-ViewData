@@ -1,0 +1,23 @@
+﻿
+
+@{
+    ViewBag.Title = "About";
+}
+
+<h3>@ViewBag.Message</h3>
+
+
+<h1>@ViewData["s_id"]</h1>
+
+<h1>@ViewData["s_name"]</h1>
+
+<h1>@ViewData["marks"]</h1>
+
+<h1>@ViewData["date"]</h1>
+
+<ul>
+    @foreach(var i in (List<string>) ViewData["subject"]){
+        <li>@i</li>
+
+            }
+</ul>
